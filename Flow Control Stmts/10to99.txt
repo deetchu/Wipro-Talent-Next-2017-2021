@@ -1,0 +1,24 @@
+13 
+Write a program to print prime numbers between 10 and 99.
+
+import java.util.*;
+public class 10to99  
+    public static void main(String[] args) {
+        int r1= 10, r2=99;
+
+        while (r1 < r2) {
+            boolean f= false;
+	    for(int i = 2; i <= r1/2; ++i) {
+                if(r1% i == 0) {
+                    f= true;
+                    break;
+                }
+            }
+
+            if (!f && r1 != 0 && r1 != 1)
+                System.out.print(r1 + " ");
+
+            ++r1;
+        }
+    }
+}

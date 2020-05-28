@@ -1,0 +1,30 @@
+20 
+Write a program that displays a menu with options 1. Add 2. Sub 
+Based on the options chosen, read 2 numbers and perform the relevant operation. After 
+performing the operation, the program should ask the user if he wants to continue. If the user 
+presses y or Y, then the program should continue displaying the menu else the program should 
+terminate.
+
+import java.util.*;
+public class Options {
+	public static void main(String[] args) {
+		Scanner s= new Scanner(System.in);
+		System.out.println("1. Add 2.Sub");
+		int choice = s.nextInt();
+		int a=s.nextInt();;
+		int b=s.nextInt();;
+		int result;
+		if (choice == 1){
+			result=a+b;
+		} 
+		else {
+			result=a-b;
+		}
+		
+		System.out.println("Result: " + result);
+		
+		System.out.println("To continue? Y or y");	
+		choice = s.nextLine().charAt(0);
+		if (choice == 'Y' || choice == 'y') main(args);
+	}
+}

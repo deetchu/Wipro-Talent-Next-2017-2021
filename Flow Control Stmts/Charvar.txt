@@ -1,0 +1,26 @@
+5 
+Initialize a character variable in a program and if the value is alphabet then print "Alphabet" if it’s 
+a number then print "Digit" and for other characters print "Special Character" 
+If Statement
+
+import java.util.*;
+public class Charvar{
+public static void main(String args[])
+    {
+        ch='y';
+        if(ch>=48 && ch<=57)
+        {
+            System.out.print("Digit");
+
+        }
+        else if((ch>=65 && ch<=90) || (ch>=97 && ch<=122))
+        {
+            System.out.print("Alphabet");
+        }
+        else
+        {
+            System.out.print("Special character");
+
+        }
+    }
+}

@@ -1,0 +1,19 @@
+3. 
+Write a Program to accept two integers through the command line argument and print the sum of 
+the two numbers
+
+import java.util.*;
+public class Add
+{
+	public static void main(String[] args)
+	{
+		int a,b,c;
+		Scanner sc=new Scanner(System.in);
+		a=Integer.parseInt(args[0]);
+		System.out.println("Enter number: "+a);
+		b=Integer.parseInt(args[1]);
+		System.out.println("Enter number: "+b);
+		c=a+b;
+		System.out.println(c);
+	}
+}

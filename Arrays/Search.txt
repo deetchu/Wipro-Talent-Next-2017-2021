@@ -1,0 +1,26 @@
+3
+Write a program to initialize an integer array with values and check if a given number is present in 
+the array or not. If the number is not found, it will print -1 else it will print the index value of the 
+given number in the array:
+
+import java.util.*;
+public class Search{
+	Public static void main(String[] args){
+		int[] a = {10,20,30,40,50};
+		Scanner s=new Scanner(System.in);
+		int search=s.nextInt();
+		int c=0;
+		for(int i=0;i<a.length;i++)
+		{
+			if(a[i]==search)
+			{
+				System.out.println(i);
+				c=1;
+				break;
+			}
+		}
+		if(f==0){
+			System.out.println(-1);
+		}
+	}
+}

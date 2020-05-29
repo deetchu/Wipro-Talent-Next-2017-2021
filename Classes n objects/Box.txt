@@ -1,0 +1,20 @@
+import java.util.*;
+public class Box {
+    int w,h,d;
+    public Box(int lenth,int breadth,int height)
+    {
+        l=length;
+        b=breadth;
+        h=height;
+    }
+	int volume()
+    {
+        int v;
+        v=l*b*h;
+        return v;
+    }
+    public static void main(String[] args) {
+        Box b = new Box(2,3,4);
+        System.out.println(b.volume());
+    }
+}

@@ -1,0 +1,23 @@
+13 
+Given a string and a non-empty word string, return a string made of each char just before and just 
+after every appearance of the word in the string. Ignore cases where there is no char before or 
+after the word, and a char may be included twice if it is between two words.
+
+
+public class String13{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String s1=sc.next();
+		int n1=s1.length();
+		String s2=sc.next();
+		int n2=s2.length();
+		String output="";
+		for(int i=0;i<n1;i++){
+			if(s1.charAt(i)==s2.charAt(0)&& i!=0)
+				output += s1.charAt(i-1);
+			if(s1.charAt(i)==s2.charAt(n2-1)&& i!=n1-1)
+				output += s1.charAt(i+1);
+		}
+		System.out.print(output);
+	}
+}

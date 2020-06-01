@@ -1,0 +1,24 @@
+public interface Playable {
+	public void play();
+}
+public class Veena implements Playable {
+	@Override
+	public void play() {
+		System.out.println("Playing Veena");
+	}
+}
+public class Saxophone implements Playable {
+	@Override
+	public void play() {
+		System.out.println("Playing Saxophone");
+
+	}
+}
+public class Test {
+	public static void main(String[] args) {
+		Playable veena = new Veena();
+		veena.play();		
+		Playable saxophone = new Saxophone();
+		saxophone.play();
+	}
+}

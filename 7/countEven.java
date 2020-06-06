@@ -8,9 +8,9 @@ class UserMainCode{
     {
         if(arr[i]%2==0)
         {
-            ec++
+            ec++;
         }
     }
-    return ec
+    return ec;
   }
 }
